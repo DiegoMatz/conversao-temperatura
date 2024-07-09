@@ -29,4 +29,14 @@ jobs:
 
       - name: Execução do teste
         run: mocha src/test/convert.js
+
+      - name: Construção da imagem docker
+        uses: docker/build-push-action@v6.3.0
+        with:
+          context: src
+          file: src/Dockerfile
+          push: true
+          tags: |
+            diegomatz/conversao-temperatura:v1
+            diegomatz/conversao-temperatura:latest
         
