@@ -38,5 +38,5 @@ jobs:
           push: true
           tags: |
             diegomatz/conversao-temperatura:v1
-            diegomatz/conversao-temperatura:latest
+            
         
