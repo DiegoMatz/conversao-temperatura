@@ -45,6 +45,6 @@ jobs:
           file: src/Dockerfile
           push: true
           tags: |
-            diegomatz/conversao-temperatura:v1
-            
+            diegomatz/conversao-temperatura:${{github.run_number}}
+            diegomatz/conversao-temperatura:latest
         
